@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Linda</string>
+    <string name="label_energia">Energia:</string>
+    <string name="label_agua">Água:</string>
+    <string name="label_gas">Gás</string>
+    <string name="label_carne">Carne:</string>
+    <string name="label_verdura">Verdura:</string>
+    <string name="label_compra">Compra:</string>
+    <string name="label_dias">Qtd. Dias mês:</string>
+    <string name="label_valor_dias">Valor por Dia(s):</string>
+    <string name="Processar">Gerar Gasto Diário</string>
+    <string name="home">Gastos Diários</string>
+    <string name="label_qtd_pessoas">Qtd. Pessoas</string>
+    <string name="label_dias_calc">Dias para Cálculo</string>
+    <string name="alarme">Acorda Mamãe/Papai</string>
+</resources>

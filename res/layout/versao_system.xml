@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/fundo3">
+    <ImageView
+            android:id="@+id/image2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/fofinha4"/>
+
+    <TextView
+            android:id="@+id/versao"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ff5c46ff"
+            android:layout_toRightOf="@+id/image2"
+            android:text="VersionName"
+            android:textSize="18dp"/>
+
+    <TextView
+            android:id="@+id/versao_code"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ff5c46ff"
+            android:layout_toRightOf="@+id/image2"
+            android:layout_below="@+id/versao"
+            android:text="VersionCode"
+            android:textSize="18dp"/>
+
+    <Button
+            android:id="@+id/dialogButtonSair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fechar"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_below="@+id/image2"/>
+
+</RelativeLayout>

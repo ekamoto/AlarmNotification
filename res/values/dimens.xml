@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="paddingLeftNameApp">8dip</dimen>
+    <dimen name="size_font_1">20dp</dimen>
+    <dimen name="size_campo_texto_1">100dp</dimen>
+    <dimen name="size_margin_left">10dp</dimen>
+    <dimen name="size_campo_texto_2">250dp</dimen>
+</resources>

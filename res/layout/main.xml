@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+    <LinearLayout android:orientation="vertical"
+                  android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:background="@drawable/fundo">
+
+        <LinearLayout
+                style="@style/TitleBar"
+                android:id="@+id/linearLayout1">
+            <ImageView
+                    style="@style/TitleBarLogo"
+                    android:id="@+id/img1"
+                    android:src="@drawable/fofinha4"
+                    android:onClick="onClickHome"
+                    android:contentDescription="@null"
+                    android:layout_marginTop="0dip"
+                    android:layout_marginRight="0dip"
+                    android:layout_marginLeft="0dip"
+                    android:layout_marginBottom="0dip"
+                    android:paddingBottom="0dip"
+                    android:background="@null"
+                    android:layout_gravity="center"
+                    android:paddingLeft="0dip"
+                    android:paddingRight="0dip"/>
+
+            <!--<ImageView-->
+            <!--android:id="@+id/sep"-->
+            <!--android:contentDescription="@null"-->
+            <!--android:layout_width="1dp"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:background="@drawable/barra_vertical"-->
+            <!--android:layout_marginRight="7dip"/>-->
+
+            <TextView
+                    style="@style/TitleBarText"
+                    android:id="@+id/tv1"
+                    android:paddingLeft="@dimen/paddingLeftNameApp"
+                    android:text="@string/alarme"
+                    android:textColor="@android:color/white"/>
+        </LinearLayout>
+
+        <TimePicker
+                android:id="@+id/hora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alarme"
+                android:id="@+id/alarme"
+                android:layout_below="@+id/textView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:checked="false"/>
+
+        <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alarme 2"
+                android:id="@+id/alarme_2"
+                android:layout_below="@+id/textView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="20dp"
+                android:checked="false"/>
+
+        <Button android:id="@+id/open_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Abrir Dialog Customizado"/>
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="br.com.hisamoto.alarmeNotification"
+          android:versionCode="1"
+          android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="17"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <application android:label="@string/app_name" android:icon="@drawable/ic_launcher" android:name="ApplicationContextProvider">
+        <activity android:name=".activity.HisamotoActivity"
+                  android:label="@string/app_name"
+                  android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <receiver android:name=".broadcast.BroadcastReceiverAux" android:label="BroadcastReceiverAux">
+            <intent-filter>
+                <action android:name="ALARME_DISPARADO"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>
